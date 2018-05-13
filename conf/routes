@@ -1,13 +1,9 @@
-
 # Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# An example controller showing a sample home page
-#GET     /                           controllers.HomeController.index
-GET     /                           controllers.Application.renderDashboard()
+# Home page
+GET     /                           controllers.Application.renderTestPage()
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
-
-      
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file)

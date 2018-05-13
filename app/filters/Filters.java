@@ -2,7 +2,6 @@ package filters;
 
 import play.filters.cors.CORSFilter;
 import play.http.DefaultHttpFilters;
-
 import javax.inject.Inject;
 
 /**

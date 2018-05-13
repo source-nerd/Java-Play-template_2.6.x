@@ -1,0 +1,30 @@
+@(assets: AssetsFinder)
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta charset="utf-8" />
+        <title>yourTitle</title>
+        <link href='https://fonts.googleapis.com/css?family=Anton|Passion+One|PT+Sans+Caption' rel='stylesheet' type='text/css'>
+        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <link href="@assets.path("stylesheets/errorPages/error404.css")" rel='stylesheet' type='text/css')>
+    </head>
+</html>
+<body>
+        <!-- Error Page -->
+    <div class="error">
+        <div class="container-floud">
+            <div class="col-xs-12 ground-color text-center">
+                <div class="container-error-404">
+                    <div class="clip"><div class="shadow"><span class="digit thirdDigit"></span></div></div>
+                    <div class="clip"><div class="shadow"><span class="digit secondDigit"></span></div></div>
+                    <div class="clip"><div class="shadow"><span class="digit firstDigit"></span></div></div>
+                    <div class="msg">OH!<span class="triangle"></span></div>
+                </div>
+                <h2 class="h1">Sorry! Page not found</h2>
+            </div>
+        </div>
+    </div>
+        <!-- Error Page -->
+    <script src="@assets.path("javascripts/errorPages/error404.js")"></script>
+</body>
